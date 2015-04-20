@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>网易云音乐</title>
+<style>
+body{
+	background: #fff;
+	width:320px;
+	height:460px;
+	margin:0;
+	padding:0px;
+}
+.sbox{
+	margin-top:0px;
+	height: 30px;
+}
+.inputbox{
+	width: 200px;
+	-webkit-border-radius: 3px;
+	border: 2px solid #aaa;
+}
+.inputbox:focus{
+	-webkit-border-radius: 3px;
+	border: 2px solid #c20c0c;
+}
+.button{
+	background: #c20c0c;
+	color: #fff;
+	-webkit-border-radius: 3px;
+	border: 2px solid #c20c0c;
+}
+.button:hover{
+	background: #ee1313;
+	color: #fff;
+	-webkit-border-radius: 3px;
+	border: 2px solid #ee1313;
+}
+.buttond{
+	background: #a30a0a;
+	color: #700808;
+	-webkit-border-radius: 3px;
+	border: 2px solid #a30a0a;
+}
+@-webkit-keyframes up {
+0% {margin-top: -12px;}
+100% {margin-top: -55px;}
+}
+@-webkit-keyframes down {
+0% {margin-top: -55px;}
+100% {margin-top: -12px;}
+}
+.uppad{
+	position:relative;
+	z-index:1000;
+	background:#fff;
+	margin-top:-12px;
+}
+.uppadu{
+	position:relative;
+	z-index:1000;
+	background:#fff;
+	margin-top:-12px;
+	-webkit-animation:up 0.2s;
+}
+.uppadd{
+	position:relative;
+	z-index:1000;
+	background:#fff;
+	margin-top:-12px;
+	-webkit-animation:down 0.2s;
+}
+</style>
+</head>
+<body>
+<div id='logo' style="display:none;width:320px;height:430px;background:#fff;"><center><img src="img/music128.png" style="margin-top:100px"><br><br><b style="font-size:16px;color:#666;">网易云音乐,听见好时光</b><p style="fon-size:9px;color:#999;margin-top:120px;">请输入歌单id</p><center></div>
+<webview id="foo" style="width:340px;height:430px;margin-top:-10px;margin-left:-10px;" minheight="430"></webview>
+<div class="uppad" id="setpal">
+<div style="height:30px;margin-bottom:10px;padding-right:20px;font-size:22px;"><a style="float:right;text-align:top;" id="menu">...</a></div>
+<center><div class="sbox">
+<input id="box" type="text" class="inputbox" placeholder="请输入歌单id">
+<input type="button" id ="save" class="button" value="读  取">
+</div></center>
+</div>
+</body>
+<script type="text/javascript" src="options.js"></script>
+</html>

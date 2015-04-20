@@ -1,0 +1,19 @@
+{
+"name":"网易云音乐歌单",
+"description":"网易云音乐,听见好时光",
+"version":"1.0",
+"app": {
+    "background": {
+      "scripts": ["background.js"]
+    }
+  },
+"icons":{
+"128":"img/music128.png",
+"48":"img/music48.png"
+},
+"manifest_version":2,
+"permissions":  [ "webview",
+				  "storage",
+				  "unlimitedStorage"
+				]
+}
